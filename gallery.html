@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея — Munity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Munity Gallery</h1>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i> Артов: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i> Лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="anime">Аниме</button>
+                <button class="filter-btn" data-filter="characters">Персонажи</button>
+                <button class="filter-btn" data-filter="games">Игры</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery">
+            <article class="image-card" data-category="anime characters">
+                <div class="card-image">
+                    <img src="images/art1.jpg" alt="Персонаж из аниме" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Сяо</h3>
+                    <div class="image-tags">
+                        <span class="tag">аниме</span>
+                        <span class="tag">персонажи</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="games">
+                <div class="card-image">
+                    <img src="images/genshin_logo.jpg" alt="Логотип Genshin Impact" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Genshin Impact</h3>
+                    <div class="image-tags">
+                        <span class="tag">игры</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="image-card" data-category="games">
+                <div class="card-image">
+                    <img src="images/hsr_logo.jpg" alt="Логотип Honkai: Star Rail" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Honkai: Star Rail</h3>
+                    <div class="image-tags">
+                        <span class="tag">игры</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="games">
+                <div class="card-image">
+                    <img src="images/wuwa_logo.jpg" alt="Логотип Wuthering Waves" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Wuthering Waves</h3>
+                    <div class="image-tags">
+                        <span class="tag">игры</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="characters anime">
+                <div class="card-image">
+                    <img src="images/art2.jpg" alt="Персонаж Март7" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Март7</h3>
+                    <div class="image-tags">
+                        <span class="tag">персонажи</span>
+                        <span class="tag">аниме</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="characters">
+                <div class="card-image">
+                    <img src="images/art3.jpg" alt="Японская каллиграфия" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Японская каллиграфия</h3>
+                    <div class="image-tags">
+                        <span class="tag">персонажи</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="characters">
+                <div class="card-image">
+                    <img src="images/art4.jpg" alt="Персонаж Аглая" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Аглая</h3>
+                    <div class="image-tags">
+                        <span class="tag">персонажи</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="characters anime">
+                <div class="card-image">
+                    <img src="images/art5.jpg" alt="Персонаж Юнона" class="gallery-img">
+                    <div class="image-overlay">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Юнона</h3>
+                    <div class="image-tags">
+                        <span class="tag">персонажи</span>
+                        <span class="tag">аниме</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Исаймудинова Махвашджон, студент 1 курса, 2026</p>
+        <p class="js-status" style="font-size: 0.8em; color: #3ac0f9;">JS загружен</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

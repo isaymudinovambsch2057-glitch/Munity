@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты — Munity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Munity</h1>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-container">
+        <section class="contact-info">
+            <h2>Связь с разработчиком</h2>
+            <div class="dev-card">
+                <div class="dev-profile">
+                    <div class="dev-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="dev-name">
+                        <h3>Исаймудинова Махвашджон</h3>
+                        <span class="specialty-badge">Frontend & UI/UX</span>
+                    </div>
+                </div>
+                <ul class="dev-details">
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <span><strong>Проект:</strong> Разработка Munity App</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Email:</strong> milanaisayva@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>Локация:</strong> Россия</span>
+                    </li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="social-btn"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="#" class="social-btn"><i class="fab fa-vk"></i> ВКонтакте</a>
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Напишите нам</h2>
+            <form action="#" class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="topic">Тема сообщения</label>
+                    <select id="topic" name="topic">
+                        <option value="bug">Нашел ошибку</option>
+                        <option value="collab">Сотрудничество</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Опишите вашу проблему или предложение..." required></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <h2>Часто задаваемые вопросы</h2>
+            <ul class="faq-list">
+                <li>
+                    <strong>Как быстро вы отвечаете?</strong>
+                    <p>Обычно мы отвечаем в течение 24 часов в рабочие дни.</p>
+                </li>
+                <li>
+                    <strong>Можно ли предложить свой арт для галереи?</strong>
+                    <p>Да, выберите тему "Сотрудничество" в форме выше.</p>
+                </li>
+                <li>
+                    <strong>График работы поддержки:</strong>
+                    <p>Пн-Пт: 10:00 - 19:00 (МСК)</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Исаймудинова Махвашджон, студент 1 курса, 2026</p>
+    </footer>
+
+</body>
+</html>
